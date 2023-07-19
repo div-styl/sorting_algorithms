@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 /*structures*/
 
@@ -23,7 +24,9 @@ typedef struct listint_s
     struct listint_s *next;
 } listint_t;
 
-/*prototypes*/
+/*printing list and array*/
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
+/*sorting prototypes*/
+void bubble_sort(int *array, size_t size);
 #endif

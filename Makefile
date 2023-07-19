@@ -24,17 +24,17 @@ build: $(PROG)
 $(PROG): $(OBJ)
 	@echo -e "$(YELLOW)In process... to compile the $(MAGENTA)$(PROG)$(NC)"
 	@$(CC) $(CFLAGS) -o $@ $^
-	@echo "$(GREEN)$(PROG) compiled$(NC)"
+	@echo -e "$(GREEN) $(PROG) compiled$(NC) \n"
 
 %.o: %.c
-	@$(CC) $(CFLAGS) -c -o $<
+	@$(CC) $(CFLAGS) -c -o  $@ $^
 
 run: build
 	@./$(PROG)
 
 clear:
 	@rm -rf $(OBJ) $(PROG)
-	@if [ ! -f $(PROG) ]; then \
+	@if [ $$? -eq 0 ]; then \
 		echo -e "$(GREEN)$(PROG) deleted$(NC)"; \
 	else \
 		echo -e "$(RED)$(PROG) not deleted$(NC)"; \
