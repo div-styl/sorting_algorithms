@@ -29,6 +29,7 @@ void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 /*sorting prototypes*/
 void bubble_sort(int *array, size_t size);
+<<<<<<< HEAD
 /* 2. selection sort */
 void swap1(int *x, int *y);
 void get_first_min(int array[], size_t size);
@@ -39,4 +40,8 @@ void get_first_min(int array[], size_t size);
 void quickSort(int array[], int low, int high);
 void quick_sort(int *array, size_t size);
 
+=======
+void insertion_sort_list(listint_t **list);
+listint_t *create_listint(const int *array, size_t size);
+>>>>>>> 01c543c7a32ea220b9aadb80d198cb9b78114552
 #endif

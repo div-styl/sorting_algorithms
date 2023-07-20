@@ -33,11 +33,25 @@ run: build
 	@./$(PROG)
 
 clear:
-	@rm -rf $(OBJ) $(PROG)
-	@if [ $$? -eq 0 ]; then \
+	@if [ -n "$(OBJ)" ]; then \
+		for obj_file in $(OBJ); do \
+			if [ -e "$$obj_file" ]; then \
+				rm -f "$$obj_file"; \
+				echo -e "$(GREEN)$$obj_file deleted$(NC)"; \
+			else \
+				echo -e "$(YELLOW)$$obj_file not found$(NC)"; \
+			fi \
+		done; \
+	else \
+		echo -e "$(YELLOW)No object files to delete$(NC)"; \
+	fi
+	@if [ -f "$(PROG)" ]; then \
+		rm -f $(PROG); \
 		echo -e "$(GREEN)$(PROG) deleted$(NC)"; \
 	else \
-		echo -e "$(RED)$(PROG) not deleted$(NC)"; \
+		echo -e "$(YELLOW)$(PROG) not found$(NC)"; \
 	fi
+
+
 
 .PHONY: build run clear
