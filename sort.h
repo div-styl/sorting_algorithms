@@ -38,8 +38,8 @@ void insertion_sort_list(listint_t **list);
 listint_t *create_listint(const int *array, size_t size);
 /* 3. Quick sort */
 void swap2(int *x, int *y);
-void get_first_min(int array[], size_t size);
-void quickSort(int array[], int low, int high);
+int partition(int array[], int low, int high, size_t size);
+void quickSort(int array[], int low, int high, size_t size);
 void quick_sort(int *array, size_t size);
 
 #endif

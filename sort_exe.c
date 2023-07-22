@@ -16,11 +16,7 @@ int main(void)
         return (1);
     print_list(list);
     printf("\n");
-<<<<<<< HEAD
     quick_sort(array, n);
-=======
-    insertion_sort_list(&list);
->>>>>>> 01c543c7a32ea220b9aadb80d198cb9b78114552
     printf("\n");
     print_list(list);
     return (0);
