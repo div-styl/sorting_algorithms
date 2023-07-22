@@ -43,6 +43,7 @@ void quickSort(int array[], int low, int high);
 void quick_sort(int *array, size_t size);
 
 /*4 . shell sort*/
-
 void shell_sort(int *array, size_t size);
+/*5. cocktail sort*/
+void cocktail_sort_list(listint_t **list);
 #endif
