@@ -42,4 +42,7 @@ void get_first_min(int array[], size_t size);
 void quickSort(int array[], int low, int high);
 void quick_sort(int *array, size_t size);
 
+/*4 . shell sort*/
+
+void shell_sort(int *array, size_t size);
 #endif
