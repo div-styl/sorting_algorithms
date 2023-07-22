@@ -31,3 +31,5 @@ Quicksort is a sorting algorithm based on **the divide and conquer** approach wh
 Selection sort is a sorting algorithm that selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.
 
 ![selection sort](img/selection_sort.webp)
+
+## shell sort
