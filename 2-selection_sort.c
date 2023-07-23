@@ -8,11 +8,11 @@
  */
 void swap1(int *x, int *y)
 {
-    int tmp;
+	int tmp;
 
-    tmp = *x;
-    *x = *y;
-    *y = tmp;
+	tmp = *x;
+	*x = *y;
+	*y = tmp;
 }
 /**
  * selection_sort - sort an array of integers in ascending order
@@ -22,23 +22,24 @@ void swap1(int *x, int *y)
  */
 void selection_sort(int *array, size_t size)
 {
-    size_t i;
+	size_t i, j;
 
-    for (i = 0; i < size - 1; i++)
-    {
-        size_t j;
-        size_t minIndex = i;
+	for (i = 0; i < size - 1; i++)
+	{
+		size_t minIndex = i;
 
-        for (j = i + 1; j < size; j++)
-        {
-            if (array[j] < array[minIndex])
-            {
-                minIndex = j;
-            }
-        }
+		for (j = i + 1; j < size; j++)
+		{
+			if (array[j] < array[minIndex])
+			{
+				minIndex = j;
+			}
+		}
 
-        swap1(&array[i], &array[minIndex]);
-
-        print_array(array, size);
-    }
+		if (minIndex != i)
+		{
+			swap1(&array[i], &array[minIndex]);
+			print_array(array, size);
+		}
+	}
 }
