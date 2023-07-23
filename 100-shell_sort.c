@@ -36,23 +36,11 @@ void shell_sort(int *array, size_t size)
 		{
 			temp = array[i];
 			j = i;
-			/**
-			 * shift earlier gap-sorted elements up until the correct
-			 * location for a[i] is found
-			 * The loop below does insertion sort for a[i] with gap
-			 * as gap
-			*/
 			while (j > gap - 1 && array[j - gap] >= temp)
 			{
 				array[j] = array[j - gap];
 				j -= gap;
 			}
-			/**
-			 * put temp (the original a[i]) in its correct location
-			 * in this subarray
-			 * Note that we use j-gap because j is decremented
-			 * by gap
-			*/
 			array[j] = temp;
 		}
 		/*calculate the next gap*/
