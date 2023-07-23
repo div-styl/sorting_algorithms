@@ -37,9 +37,9 @@ clear:
 		for obj_file in $(OBJ); do \
 			if [ -e "$$obj_file" ]; then \
 				rm -f "$$obj_file"; \
-				echo -e "$(GREEN)$$obj_file deleted$(NC)"; \
+				echo -e "$(GREEN)files are deleted$(NC)"; \
 			else \
-				echo -e "$(YELLOW)$$obj_file not found$(NC)"; \
+				echo -e "$(YELLOW)files are not found$(NC)"; \
 			fi \
 		done; \
 	else \

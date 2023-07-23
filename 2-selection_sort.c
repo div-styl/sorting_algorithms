@@ -1,5 +1,11 @@
 #include "sort.h"
 
+/**
+ * swap1 - swap two integers
+ * @x: first integer
+ * @y: second integer
+ * Return: void
+*/
 void swap1(int *x, int *y)
 {
     int tmp;
@@ -8,7 +14,12 @@ void swap1(int *x, int *y)
     *x = *y;
     *y = tmp;
 }
-
+/**
+ * get_first_min - get the first minimum value
+ * @array: array
+ * @size: size of array
+ * Return: void
+*/
 void get_first_min(int array[], size_t size)
 {
     size_t i = 1;
@@ -29,6 +40,12 @@ void get_first_min(int array[], size_t size)
     }
 }
 
+/**
+ * selection_sort - sort an array of integers in ascending order
+ * @array: array
+ * @size: size of array
+ * Return: void
+*/
 void selection_sort(int *array, size_t size)
 {
     size_t i;
