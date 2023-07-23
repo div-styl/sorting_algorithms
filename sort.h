@@ -47,7 +47,8 @@ void quick_sort(int *array, size_t size);
 
 /* 4. Shell sort */
 void shell_sort(int *array, size_t size);
-
+/* 5. cocktail_sort_list */
+void cocktail_sort_list(listint_t **list);
 /*11. Quick Sort - Hoare Partition scheme */
 
 void swap3(int *a, int *b);
