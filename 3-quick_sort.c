@@ -46,7 +46,7 @@ int lomuto_partition(int *array, int low, int high, size_t size)
 		print_array(array, size);
 	}
 
-	return i;
+	return (i);
 }
 /**
  * quickSort - quick sort algorithm
