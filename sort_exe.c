@@ -12,7 +12,11 @@ int main(void)
 
     print_array(array, n);
     printf("\n");
+<<<<<<< HEAD
     selection_sort(array, n);
+=======
+    quick_sort_hoare(array, n);
+>>>>>>> origin/main
     printf("\n");
     print_array(array, n);
     return (0);

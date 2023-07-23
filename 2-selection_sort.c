@@ -14,6 +14,32 @@ void swap1(int *x, int *y)
     *x = *y;
     *y = tmp;
 }
+/**
+ * get_first_min - get the first minimum value
+ * @array: array
+ * @size: size of array
+ * Return: void
+ */
+void get_first_min(int array[], size_t size)
+{
+    size_t i = 1;
+    int min = array[0];
+    size_t minIndex = 0;
+
+    while (i < size)
+    {
+        if (array[i] < min)
+        {
+            min = array[i];
+            minIndex = i;
+        }
+        i++;
+    }
+    if (minIndex != 0)
+    {
+        swap1(&array[0], &array[minIndex]);
+    }
+}
 
 /**
  * selection_sort - sort an array of integers in ascending order
@@ -23,12 +49,12 @@ void swap1(int *x, int *y)
  */
 void selection_sort(int *array, size_t size)
 {
-
     size_t i;
 
-    for (i = 0; i < size - 1; i++)
-    {
+    get_first_min(array, size);
 
+    for (i = 1; i < size - 1; i++)
+    {
         size_t j;
         size_t minIndex = i;
 
@@ -41,7 +67,5 @@ void selection_sort(int *array, size_t size)
         }
 
         swap1(&array[i], &array[minIndex]);
-
-        print_array(array, size);
     }
 }
