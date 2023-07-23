@@ -24,7 +24,6 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-
 /*printing list and array and create it*/
 listint_t *create_listint(const int *array, size_t size);
 void print_array(const int *array, size_t size);
@@ -40,6 +39,7 @@ void get_first_min(int array[], size_t size);
 void selection_sort(int *array, size_t size);
 
 /* 3. Quick sort */
+int lomuto_partition(int *array, int low, int high, size_t size);
 void swap2(int *x, int *y);
 void get_first_min(int array[], size_t size);
 void quickSort(int array[], int low, int high, size_t size);
