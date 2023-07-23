@@ -14,6 +14,7 @@ void swap1(int *x, int *y)
 	*x = *y;
 	*y = tmp;
 }
+
 /**
  * selection_sort - sort an array of integers in ascending order
  * @array: array
