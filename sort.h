@@ -53,6 +53,8 @@ void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
 /*7. merge sort*/
 void merge_sort(int *array, size_t size);
+/*8. heap_sort*/
+void heap_sort(int *array, size_t size);
 /*11. Quick Sort - Hoare Partition scheme */
 
 void swap3(int *a, int *b);
