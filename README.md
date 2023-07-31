@@ -5,7 +5,7 @@ an overview of how we use Big O notation to measure the time complexity of sorti
 ## Bubble Sort
 
 Bubble sort is a type of sorting algorithm you can use to arrange a set of values in ascending order. If you want, you can also implement bubble sort to sort the values in descending order.
-
+    
 ![bubble sort](img/bubble-short.png)
 
 ## Insertion Sort
@@ -80,5 +80,9 @@ Merge sort is one of the most efficient sorting algorithms. It is based on the d
 ![merge sort](img/merge-sort.png)
 
 ## quick sort hoar
+## shuffle sort 
+Shuffle sort, also known as random sort, is a simple sorting algorithm that shuffles the elements of an array randomly. The algorithm begins by swapping the last element of the array with a randomly chosen element from the entire array. Then, it selects the second-to-last element and swaps it with another random element from the remaining array, excluding the last element, and so on until the entire array is sorted. Despite its simplicity, shuffle sort is not an efficient sorting algorithm and is generally used for educational purposes rather than practical applications due to its average-case time complexity of O(n^2).
 
+# Credits
 
+**Many thanks to [littleblack111](https://github.com/littleblack111) for his contributions.**
