@@ -5,7 +5,7 @@
  * @size: The size of the array
  * Return: Nothing
 * */
-void shuffle(int array[], size_t size)
+void shuffle(int *array, size_t size)
 {
   size_t i, j;
   int tmp;
@@ -24,7 +24,7 @@ void shuffle(int array[], size_t size)
  * @size: The size of the array
  * Return: Nothing
 * */
-void shuffle_sort(int array[], size_t size) 
+void shuffle_sort(int *array, size_t size) 
 {
   size_t i;
   int key, j;

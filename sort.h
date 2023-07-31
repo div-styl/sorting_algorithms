@@ -46,8 +46,8 @@ void get_first_min(int array[], size_t size);
 void quickSort(int array[], int low, int high, size_t size);
 void quick_sort(int *array, size_t size);
 /* V4.0. Shuffle sort */
-void shuffle(int array[], size_t size);
-void shuffle_sort(int array[], size_t size);
+void shuffle(int *array, size_t size);
+void shuffle_sort(int *array, size_t size);
 
 /* 4. Shell sort */
 void shell_sort(int *array, size_t size);
