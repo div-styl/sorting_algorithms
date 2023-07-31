@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+#include <time.h>
 
 /*structures*/
 
@@ -44,6 +45,9 @@ void swap2(int *x, int *y);
 void get_first_min(int array[], size_t size);
 void quickSort(int array[], int low, int high, size_t size);
 void quick_sort(int *array, size_t size);
+/* 4. Shuffle sort */
+void shuffle(int array[], size_t size);
+void shuffle_sort(int array[], size_t size);
 
 /* 4. Shell sort */
 void shell_sort(int *array, size_t size);
